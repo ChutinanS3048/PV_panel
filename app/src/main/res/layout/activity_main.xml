@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="22dp"
+            android:paddingEnd="22dp">
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/kmutnb"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PV PANEL TESTING"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/processing_btn"
+                android:background="@drawable/button_processing_blackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="25dp"
+                android:textColor="@android:color/white"
+                android:text="Processing" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/work_history_btn"
+                android:background="@drawable/button_processing_blackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="25dp"
+                android:text="Work history" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:src="@drawable/pv"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="400dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="200dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_horizontal">
+
+                <View
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="20dp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:src="@drawable/cit"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="500dp"
+                android:layout_height="150dp"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

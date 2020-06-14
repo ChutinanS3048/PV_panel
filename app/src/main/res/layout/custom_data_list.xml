@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_toStartOf="@id/btn_edit"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_name"
+                android:maxLines="1"
+                android:ellipsize="end"
+
+                tools:text="@tools:sample/lorem/random"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/textview_detail"
+                tools:text="@tools:sample/lorem/random"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#FF0202"
+                    android:id="@+id/textview_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="12,00"
+                    />
+                <TextView
+                    android:layout_alignBaseline="@+id/textview_price"
+                    android:textColor="#FF0202"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/textview_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="55555 price"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/btn_edit"
+        android:text="ดูกราฟ"
+        android:textColor="#FFA726"
+        android:layout_marginStart="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        />
+    
+
+
+
+
+
+</RelativeLayout>
