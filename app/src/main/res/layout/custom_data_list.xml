@@ -9,7 +9,6 @@
     android:background="#FFFFFF">
 
     <LinearLayout
-        android:layout_toStartOf="@id/btn_edit"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
@@ -17,8 +16,22 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
+            <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <TextView
-                android:id="@+id/textview_name"
+                android:textSize="18dp"
+                android:textColor="#57309F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="เลขที่บอร์ด : "
+                />
+            <TextView
+                android:textSize="18dp"
+                android:layout_marginStart="200dp"
+                android:id="@+id/textviewnameBoard"
                 android:maxLines="1"
                 android:ellipsize="end"
 
@@ -26,52 +39,99 @@
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
-
-
-            <TextView
-                android:id="@+id/textview_detail"
-                tools:text="@tools:sample/lorem/random"
-                android:maxLines="1"
-                android:ellipsize="end"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+            />
+        </RelativeLayout>
 
             <RelativeLayout
                 android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:textColor="#FF0202"
-                    android:id="@+id/textview_price"
+                    android:textSize="18dp"
+                    android:textColor="#57309F"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="12,00"
+                    android:text="ความเข้มแสงที่ใช้วัด :"
                     />
                 <TextView
-                    android:layout_alignBaseline="@+id/textview_price"
-                    android:textColor="#FF0202"
-                    android:layout_alignParentRight="true"
-                    android:id="@+id/textview_stock"
+                    android:textSize="18dp"
+                    android:layout_marginStart="200dp"
+                    android:id="@+id/textviewlight_intensity"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    tools:text="@tools:sample/lorem/random"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="#57309F"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="55555 price"
+                    android:text="เวลา :"
                     />
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_marginStart="200dp"
+                    android:id="@+id/textviewmyDateTime"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+
+                    tools:text="@tools:sample/lorem/random"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                />
             </RelativeLayout>
         </LinearLayout>
 
     </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/btn_edit"
+            android:textSize="20dp"
+            android:text="ดูกราฟ"
+            android:textColor="#FFA726"
+            android:layout_marginTop="-10dp"
+            android:layout_marginStart="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            />
+
+
+
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        />
     <Button
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:id="@+id/btn_edit"
-        android:text="ดูกราฟ"
-        android:textColor="#FFA726"
+        android:id="@+id/btn_delete"
+        android:textSize="20dp"
+        android:text="ลบ"
+        android:textColor="#F50000"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
         android:layout_marginStart="4dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
         />
-    
+
 
 
 

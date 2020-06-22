@@ -3,44 +3,103 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context="processingFragment">
-    <!-- TODO: Update blank fragment layout -->
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- TODO: Update blank fragment layout -->
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/graph"
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                />
+        </RelativeLayout>
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical"
-            tools:context=".fragment_processing">
+            tools:context="processingFragment">
 
-            <TextView
-                android:id="@+id/msg"
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25dp"
-                android:padding="20dp"
-                android:layout_marginTop="50dp"
-                android:textColor="@color/colorPrimaryDark"
-                />
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="100dp"
+                    android:id="@+id/edt_numberBroad"
+                    android:text="กรุณากรอกหมายเลขบรอด"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
 
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/sp_Levellight"
+                <TextView
+                    android:id="@+id/msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:padding="20dp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/sp_Levellight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"/>
+            </RelativeLayout>
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"/>
+                android:layout_height="wrap_content">
+                <Button
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/button_processing_blackground"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/btn_OK"
+                    android:text="Processing"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+                <Button
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/button_processing_blackground"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/btn_save"
+                    android:text="Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+            </RelativeLayout>
 
-        </LinearLayout>
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+         </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+
+
+   
 
 
 
